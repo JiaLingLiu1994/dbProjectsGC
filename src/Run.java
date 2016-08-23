@@ -1,11 +1,11 @@
 public class Run {
     public static void main(String[] args) {
-        Attributes info = getInput();
-        System.out.println(info.getA() + " " + info.getB() + " " + info.getC());
+        //Run methods to show all attributes, and print results.
+        Attributes info = new Attributes();
+        System.out.println(getAllCombo(info));
     }
 
-    public static Attributes getInput() {
-        Attributes info = new Attributes();
-        return info;
+    public static String getAllCombo(Attributes info) {
+        return "Hello"; //placeholder
     }
 }

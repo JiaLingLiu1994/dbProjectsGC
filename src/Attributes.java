@@ -1,41 +1,25 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  * Created by TJ on 8/23/16.
  */
 public class Attributes {
-    char A;
-    char B;
-    char C;
+
+    Scanner kb = new Scanner(System.in);
 
     public Attributes() {
-        A = 'A';
-        B = 'B';
-        C = 'C';
-    }
+        ArrayList<String> arrayList = new ArrayList<String>();
+        System.out.print("How many paramaters will you enter (1-20): ");
+        int numatt = kb.nextInt();
+        System.out.println("Enter " + numatt + " attributes: ");
+        for (int i = 0; i < numatt; i++) {
+            arrayList.add(kb.nextLine());
 
-    public char getA() {
-        return A;
-    }
-
-    public void setA(char a) {
-        A = a;
-    }
-
-
-    public char getB() {
-        return B;
-    }
-
-    public void setB(char b) {
-        B = b;
-    }
-
-    public char getC() {
-        return C;
-
-    }
-
-    public void setC(char c) {
-        C = c;
+        }
+        System.out.println("---------------------------");
+        System.out.println("Finished adding attributes.");
+        System.out.println("---------------------------");
     }
 
 }
