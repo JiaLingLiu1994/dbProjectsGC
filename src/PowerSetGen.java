@@ -29,7 +29,7 @@ public class PowerSetGen {
         System.out.println("-------------------------------------------------");
     }
 
-    //This method will return the set of sets of integers.
+    //This method will return the set of sets of Srings.
     public Set<Set<String>> getPowerSet(Set<String> elements) {
         int size = elements.size();
         int subsets = (int) Math.pow(2, size);
@@ -44,6 +44,7 @@ public class PowerSetGen {
         return toreturn;
     }
 
+    //This compares the binary string with the correct location in the original string list
     public Set<String> getSubset(String binary, List<String> list) {
         Set<String> result = new HashSet<String>();
         for (int i = binary.length() - 1; i >= 0; i--) {
