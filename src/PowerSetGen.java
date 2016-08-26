@@ -59,7 +59,7 @@ public class PowerSetGen {
 
     public String binaryRepresentation(int num, int size) {
         String bin = Integer.toBinaryString(num);
-        bin = String.format("%0" + size + "d", Integer.parseInt(bin));
+        bin = String.format("%0" + size + "d", Long.parseLong(bin));
         return bin;
     }
 }
